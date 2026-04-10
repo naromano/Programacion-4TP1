@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Listado de Usuarios</title>
+  <link rel="stylesheet" href="./css/estilos.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="header">
+              <a href="./login.html" class="btn btn-secundario">Cerrar sesion</a>
+      <h1>Listado de usuarios</h1>
+
+      <div class="buscador">
+        <input type="text" id="busquedaUsuario" placeholder="Buscar por usuario" />
+        <button class="btn" type="button" onclick="buscarUsuarios()">Buscar</button>
+        <button class="btn btn-secundario" type="button" onclick="cargarUsuarios()">Mostrar todos</button>
+      </div>
+    </div>
+
+    <div class="tabla-contenedor">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Usuario</th>
+            <th>Apellido</th>
+            <th>Nombre</th>
+            <th>Bloqueado</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="tablaUsuarios">
+          <tr>
+            <td colspan="6">Cargando usuarios...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="./js/lista.js"></script>
+</body>
+</html>

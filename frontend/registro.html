@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro de Usuario</title>
+  <link rel="stylesheet" href="./css/estilos.css" />
+</head>
+<body>
+  <div class="login-page">
+    <div class="login-card">
+      <h1>Registro de usuario</h1>
+      <p class="subtitulo">Completá los datos para crear un usuario</p>
+
+      <form action="../backend/registro.php" method="POST">
+        <div class="campo">
+          <label for="usuario">Usuario</label>
+          <input type="text" id="usuario" name="usuario" required />
+        </div>
+
+        <div class="campo">
+          <label for="clave">Clave</label>
+          <input type="password" id="clave" name="clave" required />
+        </div>
+
+        <div class="campo">
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="apellido" required />
+        </div>
+
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+
+        <div class="campo">
+          <label for="bloqueado">Bloqueado</label>
+          <select id="bloqueado" name="bloqueado" required>
+            <option value="N">No</option>
+            <option value="Y">Sí</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn">Guardar usuario</button>
+        <a href="./login.html" class="btn btn-secundario">Volver al login</a>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
